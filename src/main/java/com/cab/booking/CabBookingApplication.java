@@ -4,7 +4,6 @@ import com.cab.booking.dto.*;
 import com.cab.booking.service.DriverService;
 import com.cab.booking.service.RideService;
 import com.cab.booking.service.UserService;
-import com.cab.booking.utils.Demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
