@@ -40,10 +40,10 @@ public class CabBookingApplication implements CommandLineRunner {
 		System.out.println(this.rideService.findRide("Rahul",new Location(10,0),new Location(15,3)));
 		System.out.println(this.rideService.findRide("Nandini",new Location(15,6),new Location(20,4)));
 
-		Ride r1 = new Ride("Driver1",new Vehicle("Swift","KA-01-12345"),1);
-		Ride r2 = new Ride("Driver4",new Vehicle("Swift","KA-01-12345"),1);
-		System.out.println(this.rideService.chooseRide("Rahul",r1));
-		System.out.println(this.rideService.chooseRide("Rahul",r2));
-		System.out.println(this.rideService.chooseRide("Rahul",r1));
+//		Ride r1 = new Ride("Driver1",new Vehicle("Swift","KA-01-12345"),1);
+//		Ride r2 = new Ride("Driver4",new Vehicle("Swift","KA-01-12345"),1);
+//		System.out.println(this.rideService.chooseRide("Rahul",r1));
+//		System.out.println(this.rideService.chooseRide("Rahul",r2));
+//		System.out.println(this.rideService.chooseRide("Rahul",r1));
 	}
 }
