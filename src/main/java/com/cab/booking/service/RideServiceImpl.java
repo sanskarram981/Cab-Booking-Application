@@ -22,8 +22,16 @@ public class RideServiceImpl implements RideService {
     }
 
     @Override
-    public Ride chooseRide(String userName, Ride ride) {
-        return null;
+    public Object chooseRide(String userName, Ride ride) {
+         List<Driver> drivers = this.driverService.getAllDrivers().stream().filter(dr -> dr.getDriverDetail().getDriverName().equals(ride.getDriverName()) && dr.isAvailable()).toList();
+         if(drivers.isEmpty()) return "Ride not selected";
+         Driver driver = drivers.get(0);
+         int index = drivers.indexOf(driver);
+         driver.setAvailable(false);
+         drivers = this.driverService.getAllDrivers();
+         drivers.set(index,driver);
+         this.driverService.setAllDrivers(drivers);
+         return "Ride Selected";
     }
 
     private boolean filterDrivers(Location userLocation,Location driverLocation,Boolean isAvailable)

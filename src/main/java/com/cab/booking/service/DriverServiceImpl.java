@@ -20,8 +20,17 @@ public class DriverServiceImpl implements DriverService {
         drivers.add(driver);
         System.out.println("Driver : "+driver + " added successfully");
     }
+
+    @Override
     public List<Driver> getAllDrivers()
     {
         return this.drivers;
     }
+
+    @Override
+    public void setAllDrivers(List<Driver> drivers) {
+        this.drivers = drivers;
+    }
+
+
 }

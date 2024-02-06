@@ -22,4 +22,9 @@ public class UserServiceImpl implements UserService{
         System.out.println("User : " + userDetail +" added successfully");
     }
 
+    @Override
+    public List<User> getAllUsers() {
+        return this.users;
+    }
+
 }

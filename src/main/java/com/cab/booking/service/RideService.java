@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface RideService {
     public Object findRide(String userName, Location source, Location destination);
-    public Ride chooseRide(String userName,Ride ride);
+    public Object chooseRide(String userName,Ride ride);
 }

@@ -10,4 +10,5 @@ import java.util.List;
 public interface DriverService {
     public void addDriver(DriverDetail driverDetail, Vehicle vehicleDetail, Location currentLocation);
     public List<Driver> getAllDrivers();
+    public void setAllDrivers(List<Driver> drivers);
 }
